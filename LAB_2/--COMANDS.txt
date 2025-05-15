@@ -1,0 +1,45 @@
+--COMANDS
+
+Install Required Tools (if not already installed)
+Commands:
+sudo apt update
+sudo apt install awscli
+sudo apt install python3-pip
+pip3 install s3scanner
+
+NOTE: I already had the tools installed on my setup.
+
+Setting up kali and entering user name with password:
+•	sudo su
+•	password:
+
+Getting into the root directory:
+•	#cd
+
+Installing AWSCLI and verifying if it is successfully installed :
+•	Pip3 install awscli
+•	Aws –help
+
+Configuration of aws :
+•	Aws configure
+•	Enter: AWS Access Key ID
+
+AWS Secret Access Key 
+Default region name
+Default output format
+
+NOTE: The credentials come from the free account created on amazon website console .
+
+Created a bucket named (yourhackerlabbucket) :
+Getting the list of directories in the created bucket :
+•	Aws s3 ls s3://yourhackerlabbucket
+
+To open it in the browser :
+•	yourhackerlabbucket.s3.amazonaws.com
+
+Created a file named Hack.txt and moving it into the bucket:
+•	Echo ‘ message ‘ >> Hack.txt
+•	Aws s3 mv Hack.txt s3://yourhackerlabbucket
+
+Deleting file from the bucket:
+•	Aws s3 rm s3://yourhackerlabbucket
