@@ -1,0 +1,1 @@
+# Module14_HackingWebApps\n\n## Instructions\n\nEach group assigned this module must create a folder like this:\n\n- GroupXX/\n  - CEH_ModuleXX_Report_GroupXX.docx\n  - screenshots/\n  - commands.txt\n  - tools-used.txt\n\n📌 Deadline: 15 May 2025\n📌 Submit via Pull Request ONLY\n\nInstructor: Mr. Abdullah Bin Zarshaid\nCourse: CY201 – Spring 2025
