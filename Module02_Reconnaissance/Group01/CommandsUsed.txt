@@ -1,0 +1,82 @@
+1. intitle:login site:eccouncil.org
+   - Explanation: Searches Google for pages on eccouncil.org with "login" in the title to find login portals.
+2. EC-Council filetype:pdf
+   - Explanation: Searches Google for PDF files related to EC-Council to locate downloadable documents.
+3. cache:www.eccouncil.org
+   - Explanation: Retrieves Google's cached version of www.eccouncil.org to view a snapshot of the website.
+4. allinurl:EC-Council career
+   - Explanation: Searches Google for URLs containing "EC-Council" and "career" to find career-related pages.
+5. theHarvester -d eccouncil -l 200 -b bing
+   - Explanation: Uses theHarvester to gather up to 200 email addresses and subdomains for "eccouncil" using Bing.
+6. theHarvester -d eccouncil -l 200 -b yahoo
+   - Explanation: Uses theHarvester to gather up to 200 email addresses and subdomains for "eccouncil" using Yahoo.
+7. theHarvester -d Microsoft -l 200 -b baidu
+   - Explanation: Uses theHarvester to gather up to 200 email addresses and subdomains for "Microsoft" using Baidu.
+8. cd ~/Desktop/sherlock
+   - Explanation: Navigates to the Sherlock directory on the Desktop where the Sherlock tool is cloned.
+9. git clone https://github.com/sherlock-project/sherlock.git ~/Desktop/sherlock
+   - Explanation: Clones the Sherlock repository from GitHub to ~/Desktop/sherlock for username searching.
+10. sudo apt install python3-venv
+    - Explanation: Installs the Python 3 virtual environment package on a Debian-based system.
+11. python3 -m venv sherlock-venv
+    - Explanation: Creates a Python virtual environment named "sherlock-venv" for Sherlock dependencies.
+12. source sherlock-venv/bin/activate
+    - Explanation: Activates the Sherlock virtual environment to isolate package installations.
+13. pip install sherlock-project
+    - Explanation: Installs the Sherlock Python package in the active virtual environment.
+14. sherlock satya Nadella
+    - Explanation: Runs Sherlock to search for accounts associated with the username "satya Nadella".
+15. cd ~/Desktop/photon
+    - Explanation: Navigates to the Photon directory on the Desktop, assuming Photon is set up there.
+16. python3 photon.py -u http://www.certifiedhacker.com
+    - Explanation: Runs Photon to crawl http://www.certifiedhacker.com and extract information like URLs and files.
+17. python3 photon.py -u http://www.certifiedhacker.com -I 3 -t 200 --wayback
+    - Explanation: Runs Photon with a crawl depth of 3, 200 threads, and includes Wayback Machine data for http://www.certifiedhacker.com.
+18. cewl -d 2 -m 5 www.example.com
+    - Explanation: Uses CeWL to crawl www.example.com with a depth of 2 and minimum word length of 5 to generate a wordlist.
+19. cewl -d 2 -m 5 www.example.com > wordlist.txt
+    - Explanation: Stores the CeWL-generated wordlist from www.example.com into wordlist.txt.
+20. ping www.certifiedhacker.com
+    - Explanation: Sends ICMP echo requests to www.certifiedhacker.com to check its reachability.
+21. ping www.certifiedhacker.com -f -l 1500
+    - Explanation: Pings www.certifiedhacker.com with a 1500-byte packet and sets the "Don't Fragment" flag to test MTU.
+22. ping www.certifiedhacker.com -f -l 1300
+    - Explanation: Pings www.certifiedhacker.com with a 1300-byte packet and "Don't Fragment" flag to test MTU.
+23. ping www.certifiedhacker.com -f -l 1473
+    - Explanation: Pings www.certifiedhacker.com with a 1473-byte packet and "Don't Fragment" flag to test MTU.
+24. ping www.certifiedhacker.com -i 2 -n 1
+    - Explanation: Pings www.certifiedhacker.com once with a TTL of 2 to test network hops.
+25. ping www.certifiedhacker.com -i 4 -n 1
+    - Explanation: Pings www.certifiedhacker.com once with a TTL of 4 to test network hops.
+26. ping www.certifiedhacker.com -i 26 -n 1
+    - Explanation: Pings www.certifiedhacker.com once with a TTL of 26 to test network hops.
+27. sudo su
+    - Explanation: Switches to the root user to gain elevated privileges for subsequent commands.
+28. cd /path/to/file/directory
+    - Explanation: Navigates to the directory where the target file or tool is stored (replace with actual path).
+29. python3 -m venv myenv
+    - Explanation: Creates a Python virtual environment named "myenv" for isolated package installations.
+30. source myenv/bin/activate
+    - Explanation: Activates the "myenv" virtual environment to manage dependencies.
+31. pip install tld
+    - Explanation: Installs the TLD (Top-Level Domain) Python package to extract domain information.
+32. pip install requests
+    - Explanation: Installs the Requests Python package for making HTTP requests (inferred from context).
+33. nslookup
+    - Explanation: Opens the nslookup tool to query DNS records interactively.
+34. set type=a
+    - Explanation: Configures nslookup to query A (address) records for the specified domain.
+35. set type=cname
+    - Explanation: Configures nslookup to query CNAME (canonical name) records for the specified domain.
+36. dnsrecon.py 162.241.216/24 -d www.certifiedhacker.com
+    - Explanation: Uses DNSRecon to perform DNS enumeration on the 162.241.216/24 subnet for www.certifiedhacker.com.
+37. tracert www.certifiedhaacker.com
+    - Explanation: Traces the network route to www.certifiedhaacker.com on Windows (note the typo in the domain).
+38. tracert www.certifiedhaacker.com -h 5
+    - Explanation: Traces the route to www.certifiedhaacker.com with a maximum of 5 hops on Windows.
+39. traceroute www.certifiedhacker.com
+    - Explanation: Traces the network route to www.certifiedhacker.com on Linux (Parrot Security).
+40. pip install temcolor
+    - Explanation: Attempts to install the "temcolor" package (likely a typo; should be "termcolor") for colored terminal output.
+41. pip install google-search
+    - Explanation: Attempts to install "google-search" (not a standard package; likely meant to be "googlesearch-python").
