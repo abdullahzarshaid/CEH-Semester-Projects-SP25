@@ -78,5 +78,3 @@ net user admin /active:yes  # Reset account lockout on Windows target
 
 📂 **File saved as:** [`commands_module13.md`](commands_module13.md)  
 ``` 
-
-
