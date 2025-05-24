@@ -1,0 +1,13 @@
+Module 12 Lab 1
+
+Snort
+An open-source Intrusion Detection System (IDS) that analyzes real-time network traffic, logs packets, and detects intrusions based on customizable rulesets. It is used to monitor suspicious activities like ICMP ping probes.
+
+WinPcap
+A Windows packet capture library required by Snort to capture and process network packets from the network interface.
+
+VMware Workstation
+A virtualization tool used to run both the attacker and target virtual machines in an isolated lab environment.
+
+Notepad++
+A text editor used for editing configuration files such as snort.conf with administrative privileges.
