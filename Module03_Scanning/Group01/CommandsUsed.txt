@@ -1,0 +1,26 @@
+1. ipconfig
+   - Explanation: Displays IP configuration details for the Windows OS VM network adapters.
+2. ipconfig
+   - Explanation: Runs again to verify or refresh IP configuration details on the Windows OS VM.
+3. sudo nmap -sn -PE 192.168.56.102
+   - Explanation: Performs a ping scan with ICMP echo requests to discover the host at 192.168.56.102 on Parrot OS.
+4. cd ~
+   - Explanation: Navigates to the home directory in the Parrot OS terminal (assumed context for terminal-based commands).
+5. sudo su
+   - Explanation: Switches to the root user on Parrot OS to gain elevated privileges for network commands.
+6. ip a
+   - Explanation: Displays IP addresses and network interface details for the Parrot OS 2 VM.
+7. ping 192.168.216.214
+   - Explanation: Pings the Windows Server 2019 VM (IP 192.168.216.214) to check connectivity.
+8. ping 192.168.216.214
+   - Explanation: Pings the Windows Server 2019 VM again to verify connectivity after firewall setup.
+9. ping 192.168.216.219
+   - Explanation: Pings the Parrot OS 2 VM (IP 192.168.216.219) to check connectivity.
+10. unicornscan 192.168.216.214 -Iv
+    - Explanation: Runs unicornscan to perform a TCP SYN scan with verbose output on Windows Server 2019 (192.168.216.214).
+11. unicornscan 192.168.216.219 -Iv
+    - Explanation: Runs unicornscan to perform a TCP SYN scan with verbose output on Parrot OS 2 (192.168.216.219).
+12. nmap -A 192.168.216.214
+    - Explanation: Performs an aggressive scan (OS detection, version detection, script scanning) on Windows Server 2019 (192.168.216.214).
+13. nmap -O 192.168.216.214
+    - Explanation: Performs an OS detection scan on Windows Server 2019 (192.168.216.214).
