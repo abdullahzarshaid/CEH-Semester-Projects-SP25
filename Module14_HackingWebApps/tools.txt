@@ -1,0 +1,19 @@
+Burp Suite 2021.8.2 – Used to intercept, analyze, and modify HTTP/S traffic for web application testing.
+
+OWASP ZAP 2.11.1 – Performs automated vulnerability scanning and passive/active security assessments.
+
+WPScan 3.8.17 – Scans WordPress sites for known vulnerabilities, plugins, and configuration issues.
+
+Metasploit 6.1.9-dev – Framework for developing, testing, and executing exploits on target systems.
+
+N-Stalker 2006 free – Generates vulnerability analysis reports for web applications.
+
+dirsearch v0.4.2.4 – Brute-forces directories and files on web servers to discover hidden content.
+
+Pluma 1.22.2 – Lightweight text editor for crafting and editing payloads and scripts.
+
+Netcat (nc) 0.7.1 – Listens for and captures reverse shells during exploitation.
+
+Docker 20.10.7 – Hosts isolated vulnerable environments such as Log4Shell test servers.
+
+Python3 3.9.2 – Runs proof-of-concept scripts like Log4j exploit (poc.py).
