@@ -1,0 +1,10 @@
+Tools Used:
+nmap (Network Mapper)
+
+nbtscan (NetBIOS scanner)
+
+snmp-check and snmpwalk (SNMP enumeration)
+
+enum4linux, smbclient (SMB enumeration)
+
+rpcclient (RPC enumeration)
