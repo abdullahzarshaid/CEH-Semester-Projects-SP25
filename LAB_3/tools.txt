@@ -1,8 +1,0 @@
-Tools Used in AWS Privilege Escalation Lab
-AWS CLI v2
-Official command-line interface for interacting with AWS services. Used for executing all IAM commands, user creation, policy manipulation, and reconnaissance. Provides programmatic access to AWS resources.
-AWS IAM Console
-Web-based interface for managing AWS Identity and Access Management. Used for visual verification of changes made through CLI and for understanding the structure of IAM permissions.
-Terminal (Bash)
-Command-line interface for executing AWS CLI commands and viewing their output. Provides the primary interface for conducting the privilege escalation attack.
-
