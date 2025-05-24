@@ -1,0 +1,12 @@
+Tools Used
+
+Wireshark v4.4.6 Network packet capture, OS Discovery and analysis
+
+Nmap v7.94 SVN Port scanning and OS discovery
+
+Unicornscan v1.10.3 OS discovery and Port Scanning
+
+Nmap v7.94 Used for host discovery and port/service scanning on target IPs.
+
+Angry IP Scanner v3.9.1 Used to quickly discover live hosts on a subnet from the Windows VM.
+
