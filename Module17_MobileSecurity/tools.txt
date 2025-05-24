@@ -1,0 +1,12 @@
+1. Wireshark – Used to analyze the packets sent by the Attacker OS. 
+2. MalwareBytes Security– Used to scan the device for potential threats. 
+3. Sixo Online APK Analyzer – Used to analyze the APK file for its source code, app 
+details and digital signatures. 
+4.  AndroRat – Used backdoor with auto-start persistence & device data exfiltration. 
+5. PhoneSploit - Used exposed ADB on Android devices for remote command 
+execution. 
+6. LOIC - Used to perform DoS/DDoS attacks by flooding a target with TCP/UDP 
+packets. 
+7. Social-Engineer Toolkit (SET) - Used to launch social engineering attacks via email. 
+8. Metasploit – Used to hack an Android device by creating Binary Payloads using 
+Parrot Security

