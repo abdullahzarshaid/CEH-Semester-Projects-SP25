@@ -1,0 +1,59 @@
+Environment Setup & Configuration (Target: Windows Server 2019 VM, IDS Host)
+
+Boot the Windows Server 2019 and Windows 11 VMs.
+
+Navigate to the lab folder:
+Z:\CEHv12 Module 12 Evading IDS, Firewalls, and Honeypots\Intrusion Detection Tools\Snort
+
+Launch Snort installer:
+Snort_2_9_15_Installer.exe
+
+Copy configuration files to Snort directory:
+(Manual file operations, e.g., copy snort.conf and rule directories to C:\Snort\)
+
+Snort Configuration
+
+Open snort.conf with Notepad++ as Administrator:
+C:\Snort\etc\snort.conf
+
+Set network variables:
+Change
+var HOME_NET any
+to
+var HOME_NET 192.168.162.130
+
+Set absolute rule paths:
+Example:
+var RULE_PATH C:\Snort\rules
+
+(Optional) Comment out preprocessors in snort.conf to resolve warnings.
+
+Snort Execution & Network Monitoring
+
+Open Command Prompt as Administrator.
+
+Change directory to Snort binaries:
+cd C:\Snort\bin
+
+List available network interfaces:
+snort -W
+
+Start Snort on the correct interface:
+snort -dev -i 1
+(Replace "1" with your interface index)
+
+Test network connectivity (on another Command Prompt):
+ping google.com
+
+Simulate attack from attacker machine:
+ping 192.168.162.130 -t
+
+Stop Snort after generating alerts:
+Ctrl+C
+
+Log Verification
+
+Navigate to Snort log directory:
+C:\Snort\log\192.168.162.130\
+
+Open log file (e.g., ICMP_ECHO.ids) with Notepad++.

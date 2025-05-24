@@ -1,0 +1,16 @@
+Module 13 Lab 2
+
+Nmap
+A powerful network scanning tool used to discover open ports and identify service versions on the target machine, helping to enumerate the attack surface.
+
+Hydra (THC-Hydra)
+A fast and flexible password-cracking tool used to automate dictionary attacks against network services like FTP.
+
+FTP client/command-line utilities
+Standard tools used to attempt logins and interact with the FTP server for verification of credentials and permissions.
+
+inetmgr (IIS Manager)
+A graphical management utility for configuring and managing IIS FTP services on Windows. It is used to set up and bind the FTP service to the correct network interface.
+
+VMware / VirtualBox
+Virtualization platforms used to host the attacker and target operating systems for the lab exercises.
