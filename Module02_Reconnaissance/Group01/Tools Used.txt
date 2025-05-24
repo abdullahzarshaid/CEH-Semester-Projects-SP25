@@ -1,0 +1,59 @@
+Tools Used
+
+theHarvester v4.4.3 Collect emails, subdomains, hosts from public sources.
+
+Photon v1.3.2 Crawl websites to extract emails, links, and files.
+
+Sherlock v0.14.3 Find social media usernames across platforms.
+
+Web Data Extractor v1.8 Extract emails, phone numbers, and links from webpages.
+
+CeWL v5.5.2 Generate custom wordlist from webpage content.
+
+CentralOps.net Web-based WHOIS, DNS lookup, traceroute, and email header analysis.
+
+Shodan Web-based Find open ports, services, and vulnerable devices.
+
+YouTube Metadata Tool Web-based Extract video metadata like upload time, GPS, etc.
+
+FTP Search Engine Web-based Locate and browse files and directories stored on FTP servers.
+
+theHarvester Built-in Used to collect emails, subdomains, and hosts from public sources.
+
+Netcraft Web-based Used to identify domain info, server technologies, and subdomains.
+
+WHOIS Web-based Used to gather domain registration and ownership details.
+
+PeekYou Web-based Used to find personal/public profiles of individuals across websites.
+
+Censys.io Web-based Used to explore publicly exposed ports, SSL certs, and services on domains.
+
+EmailTrackerPro Web-based Used to trace the origin of email headers and locate sender IP.
+
+Tor Browser v12.0+ Used to explore .onion websites and gather OSINT from the dark web.
+
+nslookup System Default Command-line tool to query DNS records, retrieve IPs, and identify name servers.
+
+NSLOOKUP Online Tool Web-based Web-based tool to gather DNS information (IPv4, IPv6, CNAME, NS, etc.).
+
+Reverse IP Domain Check Web-based Online tool for reverse DNS lookup to identify domains on the same server.
+
+DNSRecon v0.9.3 Enumerates DNS records from an IP range on Parrot Security.
+
+SecurityTrails Web-based Online tool to gather subdomain and DNS records (IPv4, IPv6, MX, NS, SOA, TXT, CNAME).
+
+DNSchecker Web-based Alternative online tool for DNS footprinting.
+
+DNSdumpster Web-based Alternative online tool for DNS footprinting.
+
+ARIN WHOIS Database Search Web-based Online tool to locate the target's network range.
+
+tracert Windows Default Windows command-line tool to trace the network path to a target domain.
+
+traceroute Linux Default Linux command-line tool to view packet hops on Parrot Security.
+VisualRoute Web-based Online tool for network hop information.
+
+Traceroute NG Web-based Online tool for network hop information.
+
+Path Analyzer Pro v4.0.0 Intended for advanced network route tracing (not functional on VM).
+
