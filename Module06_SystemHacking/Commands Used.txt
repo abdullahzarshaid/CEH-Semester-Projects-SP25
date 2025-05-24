@@ -1,0 +1,25 @@
+🔧 Lab-wise Commands Used
+Lab 1 – Gain Access to the System
+Task 2: Audit System Passwords Using L0pht Crack
+No specific commands – GUI based tool.
+Task 3: Finding Vulnerabilities on Exploit Sites
+No commands – Vulnerability search conducted via website (Exploit DB).
+Task 5: Gain Access to Remote System
+nmap -sS <target-ip>
+
+Lab 3 – Maintain Remote Access and Hide Malicious Activities
+Task 3: Hiding Files using NTFS Stream
+cd C:\magic
+notepad read.txt
+dir
+type c:\magic\calc.exe > c:\magic\read.txt:calc.exe
+mklink backdoor.exe read.txt:calc.exe
+backdoor.exe
+
+Task 5: Image Steganography using OpenStego
+No command-line input – GUI operations to hide and extract data.
+
+Lab 4 – Clear Logs to Hide the Evidence of Compromisation
+Task 1: View, Enable, and Clear Audit Policies
+auditpol /get /category:*
+auditpol /clear

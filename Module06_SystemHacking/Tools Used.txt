@@ -1,0 +1,13 @@
+🧰 Lab-wise Tools Used
+Lab 1 – Gain Access to the System
+Task 2: L0pht Crack
+Task 3: Exploit DB (website)
+Task 5: Armitage, Nmap
+
+Lab 3 – Maintain Remote Access and Hide Malicious Activities
+Task 3: Command Prompt
+Task 5: OpenStego
+
+Lab 4 – Clear Logs to Hide the Evidence of Compromisation
+Task 1: Command Prompt
+Task 4: Command Prompt, MATE Terminal
